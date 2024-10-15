@@ -1,0 +1,35 @@
+ const numbers = [1, 12, 2, 3, 6, 4, 5, 9, 21, 5, 47]
+        //problem 1 write a function take array and return even numbers only
+        function even(numbers) {
+            return numbers.filter((number) => number % 2 === 0);
+        }
+        const evenNumbers = even(numbers)
+        console.log(evenNumbers, "evenNumbers");
+
+
+        //problem 2 write a function takes array and return the largest number
+        function largest(number) {
+            return Math.max(...number)
+        }
+        const largestNumber = largest(numbers)
+        console.log(largestNumber, "largestNumber");
+
+        //problem 3 write a function takes input and return  a string but reversed 
+        let name = "mohamed"
+        function reversed(input) {
+
+            return input.split("").reverse().join("")
+        }
+        const reversedName = reversed(name)
+        console.log(reversedName, "reversedName");
+
+
+
+        //problem 4 write a function takes array of number and remove the dublicate
+        const num = [1, 2, 2, 3, 3, 6, 6, 4, 5, 21, 9, 21, 5, 47]
+        function removeDublicate(numbers) {
+
+            return [... new Set(numbers)]
+        }
+        const removedNumbers = removeDublicate(num)
+        console.log(removedNumbers, "removedNumbers");
